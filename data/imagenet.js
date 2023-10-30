@@ -1,4 +1,4 @@
-export const imagenetClasses: {[id: number]: string[]} = {
+export const imagenetClasses = {
   '0': ['n01440764', 'tench'],
   '1': ['n01443537', 'goldfish'],
   '2': ['n01484850', 'great_white_shark'],

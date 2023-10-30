@@ -1,9 +1,9 @@
-// Language: typescript
-// Path: react-next\utils\predict.ts
-import { getImageTensorFromPath } from './imageHelper';
-import { runSqueezenetModel } from './modelHelper';
+// Language: JavaScript
+// Path: react-next/utils/predict.js
+const { getImageTensorFromPath } = require('./imageHelper');
+const { runSqueezenetModel } = require('./modelHelper');
 
-export async function inferenceSqueezenet(path: string): Promise<[any,number]> {
+async function inferenceSqueezenet(path) {
   // 1. Convert image to tensor
   const imageTensor = await getImageTensorFromPath(path);
   // 2. Run model
@@ -12,3 +12,6 @@ export async function inferenceSqueezenet(path: string): Promise<[any,number]> {
   return [predictions, inferenceTime];
 }
 
+module.exports = {
+  inferenceSqueezenet
+};

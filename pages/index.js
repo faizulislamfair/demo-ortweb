@@ -1,11 +1,11 @@
-import type { NextPage } from 'next';
+// import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import ImageCanvas from "../components/ImageCanvas";
 
 
-const Home: NextPage = () => {  
-  
+const Home = () => {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -19,9 +19,9 @@ const Home: NextPage = () => {
           Use ORT Web
         </h1>
 
-      <ImageCanvas width={240} height={240}/>
-      <div id="result" className="mt-3">
-      </div>
+        <ImageCanvas width={240} height={240} />
+        <div id="result" className="mt-3">
+        </div>
       </main>
 
       <footer className={styles.footer}>

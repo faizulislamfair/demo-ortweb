@@ -22,7 +22,16 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "components/ImageCanvas.js",
+    "data/imagenet.js",
+    "data/sample-image-urls.js",
+    "pages/api/hello.js",
+    "pages/_app.js",
+    "pages/index.js",
+    "utils/imageHelper.js",
+    "utils/modelHelper.js",
+    "utils/predict.js"
   ],
   "exclude": [
     "node_modules"
